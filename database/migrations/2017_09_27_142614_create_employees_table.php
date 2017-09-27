@@ -21,20 +21,20 @@ class CreateEmployeesTable extends Migration
             $table->string('complete_name');
             $table->string('rg');
             $table->string('expedition_date_rg');
-            $table->string('uf_rg');
+            $table->integer('uf_id')->unsigned();
             $table->string('org_rg');
             $table->string('father');
             $table->string('mother');
             $table->string('birth');
-            $table->string('birth_parents');
-            $table->string('birth_state');
+            $table->integer('birth_parents')->unsigned();
+            $table->integer('birth_state')->unsigned();
             $table->string('birth_city');
-            $table->string('civil_state');
+            $table->integer('civil_state')->unsigned();
             $table->string('sex');
             $table->string('cpf_own');
             $table->string('cpf');
-            $table->string('schooling');
-            $table->string('color');
+            $table->integer('schooling')->unsigned();
+            $table->integer('color')->unsigned();
             $table->timestamps();
         });
     }
