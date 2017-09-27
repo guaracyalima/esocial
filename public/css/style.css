@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    background-image: url('../bg_brasal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.container-login label {
+   font-weight: 500;
+   margin-bottom: 10px !important;
+}
+
+.container-login h3 {
+   text-transform: uppercase;
+   font-size: 19px;
+   font-weight: 400;
+}
+
+
+.load {
+   position: fixed;
+   z-index: 99999;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(255,255,255,.76);
+   display: none;
+}
+
+.imgLoad {
+    width:80px;
+    height:80px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+}
